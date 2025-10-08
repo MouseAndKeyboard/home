@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ff0;
+        }
+        
+        .headshot {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            width: 300px;
+            height: 225px;
+        }
+        
+        .check-out-list {
+            position: absolute;
+            top: 80px;
+            right: 50px;
+        }
+        
+        .check-out-list a {
+            color: inherit;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        .check-out-list a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        
+        .check-out-list a:hover::after {
+            width: 100%;
+        }
+        
+        .build-in-public {
+            position: absolute;
+            bottom: 120px;
+            left: 40%;
+            transform: rotate(-3deg);
+        }
+        
+        .build-in-public a {
+            color: inherit;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        .build-in-public a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: currentColor;
+            transition: width 0.3s ease;
+        }
+        
+        .build-in-public a:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <img src="headshot.png" alt="Headshot" class="headshot">
+    
+    <div class="check-out-list">
+        inventions:<br>
+        <a href="https://regnet.ai">regnet.ai</a><br>
+        <a href="https://underlandex.com">underlandex.com</a><br>
+        <a href="https://autoscrapermaker.com">autoscrapermaker.com</a><br>
+        <a href="https://discord.gg/nAcsY5yh">CivLabs</a><br>
+        <a href="#">steamhunt</a>
+    </div>
+    
+    <div class="build-in-public">
+        <a href="updates.html">build in public</a>
+    </div>
+</body>
+</html>
